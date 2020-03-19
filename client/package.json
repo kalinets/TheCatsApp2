@@ -1,0 +1,51 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.tsx",
+  "scripts": {
+    "build": "webpack --mode production",
+    "bundle": "webpack",
+    "check-types": "tsc",
+    "start": "webpack-dev-server --mode development --hot --port 6126",
+    "lint": "eslint -c ../.eslintrc ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Uladzimir Kalinets",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "antd": "^4.0.0",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "sass-loader": "^8.0.2",
+    "socket.io-client": "^2.3.0",
+    "style-loader": "^1.1.3",
+    "typescript": "^3.8.3",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-router-dom": "^5.1.3",
+    "@types/socket.io-client": "^1.4.32",
+    "tslint": "^6.0.0",
+    "tslint-immutable": "^6.0.1"
+  }
+}

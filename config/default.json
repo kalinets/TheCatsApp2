@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://kalinets:kalinets88@users-q3irl.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtSecret": "secret"
+}
