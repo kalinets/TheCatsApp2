@@ -8,7 +8,7 @@ type Props = {
   path: string
 }
 
-export default function PrivateRoute({ component: Component, ...rest }: Props) {
+export default function PrivateRoute({ component: Component, ...rest }: Props): JSX.Element {
   const { isAuthenticated, loading } = useContext(AuthContext)
 
   return (

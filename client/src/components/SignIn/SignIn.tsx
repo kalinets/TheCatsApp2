@@ -9,7 +9,7 @@ const layout = {
   wrapperCol: { span: 18 },
 }
 
-export default function SignIn() {
+export default function SignIn(): JSX.Element {
   const history = useHistory()
   const { error, loginUser, isAuthenticated, isSubmitting } = useContext(AuthContext)
 

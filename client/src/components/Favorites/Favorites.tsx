@@ -7,7 +7,7 @@ import FavoritesContext from '../../context/favorites/FavoritesContext'
 
 import { ICat } from '../../types'
 
-export default function Favorites() {
+export default function Favorites(): JSX.Element | null {
   const { favorites, loading, isRemovingManyFromFavs, removeManyFavorites } = useContext(
     FavoritesContext
   )

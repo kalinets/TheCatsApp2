@@ -46,7 +46,7 @@ if (process.env.NODE_ENV !== 'production') {
 
 const socket = io.connect(apiUrl)
 
-export default function FavoritesState(props: Props) {
+export default function FavoritesState(props: Props): JSX.Element {
   const initialState = {
     error: null,
     favorites: [],

@@ -5,7 +5,7 @@ import AuthContext from '../../context/auth/AuthContext'
 import FavoritesContext from '../../context/favorites/FavoritesContext'
 import { ROUTES } from '../../constants'
 
-export default function Navigation() {
+export default function Navigation(): JSX.Element {
   const { isAuthenticated, loadUser, logoutUser } = useContext(AuthContext)
   const { favorites, getFavorites } = useContext(FavoritesContext)
   const history = useHistory()

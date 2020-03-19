@@ -15,7 +15,7 @@ if (process.env.NODE_ENV !== 'production') {
   apiUrl = ''
 }
 
-export default function ViewCat() {
+export default function ViewCat(): JSX.Element {
   const [currentCat, setCurrentCat] = useState<ICat | null>(null)
   const [loadingCat, setLoadingCat] = useState<boolean>(false)
   const [isInFavorites, setIsInFavorites] = useState<boolean>(false)

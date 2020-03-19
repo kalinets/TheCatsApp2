@@ -11,7 +11,7 @@ if (localStorage.token) {
   axios.defaults.headers.common['x-auth-token'] = localStorage.token
 }
 
-export default function App() {
+export default function App(): JSX.Element {
   return (
     <AuthState>
       <FavoritesState>

@@ -26,7 +26,7 @@ if (process.env.NODE_ENV !== 'production') {
   apiUrl = ''
 }
 
-export default function AuthState(props: Props) {
+export default function AuthState(props: Props): JSX.Element {
   const initialState = {
     isAuthenticated: false,
     token: localStorage.getItem('token'),

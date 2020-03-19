@@ -14,7 +14,7 @@ import GlobalPreloader from '../components/GlobalPreloader'
 
 const { Header, Footer, Content } = Layout
 
-export default function index() {
+export default function index(): JSX.Element {
   const { loading } = useContext(AuthContext)
 
   return (

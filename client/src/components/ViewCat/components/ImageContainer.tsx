@@ -6,7 +6,7 @@ type Props = {
   url: string
 }
 
-export default function ImageContainer(props: Props) {
+export default function ImageContainer(props: Props): JSX.Element {
   const { height, width, url } = props
   return (
     <div className='image-container' style={{ paddingTop: (height / width) * 100 + '%' }}>

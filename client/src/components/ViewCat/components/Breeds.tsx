@@ -9,7 +9,7 @@ type Props = {
   setCurrentCat(arg0: ICat | null): void
 }
 
-export default function Breeds({ apiUrl, setCurrentCat }: Props) {
+export default function Breeds({ apiUrl, setCurrentCat }: Props): JSX.Element {
   const [breeds, setBreeds] = useState<IBreed[]>([])
   const [loadingBreeds, setLoadingBreeds] = useState<boolean>(true)
   const [selectedBreed, setSelectedBreed] = useState<string>('')

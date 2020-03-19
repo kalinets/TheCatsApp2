@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Alert } from 'antd'
 
-export default function OfflineAlert() {
+export default function OfflineAlert(): JSX.Element | null {
   const [isOffline, setIsOffline] = useState<boolean>(false)
 
   useEffect(() => {
